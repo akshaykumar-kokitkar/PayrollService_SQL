@@ -21,3 +21,9 @@ select salary from employee_payroll where name = 'billi'
 select salary from employee_payroll
 WHERE StartDate BETWEEN CAST('2018-01-01'
 AS DATE) AND GETDATE();
+
+ALTER TABLE employee_payroll
+ADD gender char(2)
+
+update employee_payroll set Gender = 'M' where name = 'Billi' or name = 'Charlie'or name = 'Mark';
+update employee_payroll set Gender = 'F' where name = 'Terisa';
