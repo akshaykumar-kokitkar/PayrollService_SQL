@@ -10,3 +10,8 @@ constraint DefaultDepartment_constraint default 'CS' for department
 
 alter table employee_payroll add
 constraint DefaultAddress_constraint default 'Mumbai' for address
+
+alter table employee_payroll add deductions float;
+alter table employee_payroll add taxable_pay real;
+alter table employee_payroll add net_pay real;
+alter table employee_payroll add net real;
