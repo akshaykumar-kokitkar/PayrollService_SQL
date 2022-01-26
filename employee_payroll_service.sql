@@ -35,3 +35,5 @@ select max(salary) from employee_payroll where gender = 'M' group by Gender;
 select count(salary) from employee_payroll where gender = 'M' group by Gender;
 select count(salary) from employee_payroll where gender = 'F' group by Gender;
 
+
+
